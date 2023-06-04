@@ -38,7 +38,7 @@ export default function Gallery({ products }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let products = await axios.get(
     process.env.NEXT_PUBLIC_SERVER_URL + '/product'
   )
