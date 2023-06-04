@@ -39,7 +39,9 @@ export default function Gallery({ products }) {
 }
 
 export async function getStaticProps() {
-  let products = await axios.get(process.env.NEXT_PUBLIC_SERVER_URL+"/product");
+  let products = await axios.get(
+    process.env.NEXT_PUBLIC_SERVER_URL + '/product'
+  )
   return {
     props: {
       products: products.data,
