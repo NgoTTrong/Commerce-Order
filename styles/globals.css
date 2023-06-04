@@ -4,4 +4,90 @@
 
 * {
     font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+}
+
+.order-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+.order-form label {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: white;
+  }
+.order-form input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.25rem;
+    outline: none;
+    width: 60vw;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+  }
+
+.order-form button {
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 0.5rem;
+    background-color: rgb(104, 187, 255);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  
+.order-form .errorMsg {
+    max-width: 100%;
+    font-size:1rem;
+    color:rgb(248, 106, 106);
+  }
+.order-container{
+    font-family: "Sora", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    width: 100vw;
+    background-color: rgba(33, 29, 29, 0.8);
+    padding: 2rem;
+    min-width: 500px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 14px 3px rgb(222, 224, 250);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.order-container .close-form{
+    width: 5rem;
+    height: 2rem;
+    background-color: rgb(173, 173, 235);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 5px;
+    position: absolute;
+    top: 5rem;
+    right: 10rem;
+}
+.order-container .close-form:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgb(102, 102, 197);
+    font-weight: bold;
+}
+.logo{
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    z-index: 1000;
+}
+.logo:hover{
+    cursor: pointer;
 }
